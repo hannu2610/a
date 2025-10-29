@@ -1,0 +1,12 @@
+name: Hello Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "👋 Xin chào từ GitHub Actions!"
